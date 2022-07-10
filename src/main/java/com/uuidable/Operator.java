@@ -1,17 +1,4 @@
 package com.uuidable;
 
-public sealed interface Operator permits EqualsOperator, NotEqualsOperator {
+public sealed interface Operator permits EqualsOperator, NotEqualsOperator, NonSealedOperator, RecordOperator {
 }
-
-record EqualsOperator() implements Operator {
-
-}
-
-record NotEqualsOperator() implements Operator {
-
-}
-
-//
-//record LessThanOperator() implements Operator {
-//
-//}
